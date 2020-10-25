@@ -1,0 +1,13 @@
+ARG PHP_VERSION=7.3
+
+FROM devilster/base-php-apache2:${PHP_VERSION}
+
+LABEL maintainer="Devil.Ster.1"
+LABEL version="1.0.1"
+
+ARG BUILD_VER=20201024
+ARG PHP_VERSION=${PHP_VERSION}
+
+
+EXPOSE 80
+EXPOSE 443
